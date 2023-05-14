@@ -2,6 +2,50 @@
 
 using namespace std;
 
+
+class Student {
+private:
+    int id;
+    string name;
+    double gpa;
+    string department;
+
+public:
+    Student(int studentId,  string studentName, double studentGpa,  string studentDepartment)
+            : id(studentId), name(studentName), gpa(studentGpa), department(studentDepartment) {}
+
+    int getId() const {
+        return id;
+    }
+
+    string getName() const {
+        return name;
+    }
+
+    double getGpa() const {
+        return gpa;
+    }
+
+    string getDepartment() const {
+        return department;
+    }
+
+    void setId(int studentId) {
+        id = studentId;
+    }
+
+    void setName(const string& studentName) {
+        name = studentName;
+    }
+
+    void setGpa(double studentGpa) {
+        gpa = studentGpa;
+    }
+
+    void setDepartment(const string& studentDepartment) {
+        department = studentDepartment;
+    }
+};
 void displayBSTMenu() {
     cout << "((Second Menu - choice 1 BST))" << endl;
     cout << "Choose one of the following options:" << endl;
