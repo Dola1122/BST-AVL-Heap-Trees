@@ -1,3 +1,6 @@
+//
+// Created by DELL on 5/15/2023.
+//
 #include <iostream>
 #include <fstream>
 
@@ -266,7 +269,7 @@ bool deleteStudent(AVLNode*& root , int id)
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-int main() {
+void StartAVLMenu(){
     AVLNode* root = nullptr;
     loadStudentsFromFile(root);
 
@@ -288,7 +291,6 @@ int main() {
                 if (deleteStudent(root , id))
                     cout << "Student deleted successfully\n";
 
-
                 break;
             }
             case 3: {
@@ -307,8 +309,7 @@ int main() {
                 break;
             }
             case 5: {
-                // Return to main menu
-                exit(0);  // it will be changed to return to main menu
+                return;
                 break;
             }
             default: {
@@ -318,3 +319,6 @@ int main() {
         }
     }
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+

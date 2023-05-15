@@ -475,7 +475,6 @@ void maxHeap() {
 int main() {
     int mainChoice, subChoice;
 
-
     do {
         cout << "((First Menu - Main menu))" << endl;
         cout << "Choose Data Structure:" << endl;
@@ -545,10 +544,48 @@ int main() {
                 } while (subChoice != 5);
                 break;
             case 3:
-                minHeap();
+                do {
+                    displayMinHeapMenu();
+                    cout << "Enter your choice: ";
+                    cin >> subChoice;
+
+                    switch (subChoice) {
+                        case 1:
+                            // Add student logic for Min Heap
+                            break;
+                        case 2:
+                            // Print all students sorted by GPA for Min Heap
+                            break;
+                        case 3:
+                            // Return to main menu
+                            break;
+                        default:
+                            cout << "Invalid choice. Please try again." << endl;
+                            break;
+                    }
+                } while (subChoice != 3);
                 break;
             case 4:
-                maxHeap();
+                do {
+                    displayMaxHeapMenu();
+                    cout << "Enter your choice: ";
+                    cin >> subChoice;
+
+                    switch (subChoice) {
+                        case 1:
+                            // Add student logic for Max Heap
+                            break;
+                        case 2:
+                            // Print all students sorted by GPA for Max Heap
+                            break;
+                        case 3:
+                            // Return to main menu
+                            break;
+                        default:
+                            cout << "Invalid choice. Please try again." << endl;
+                            break;
+                    }
+                } while (subChoice != 3);
                 break;
             case 5:
                 cout << "Exiting the program..." << endl;
