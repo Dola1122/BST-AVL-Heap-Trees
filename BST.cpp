@@ -235,8 +235,7 @@ void printUsingBST(BST Btree){
 
 
 }
-
-int main(){
+void StartBSTMenu(){
     string filename = "students.txt";
     BST Btree;
     Btree.root=Btree.readFile();
@@ -270,7 +269,7 @@ int main(){
         }
     } while (choice != 5);
 
-
 }
+
 
 
