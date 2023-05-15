@@ -1,3 +1,9 @@
 # ninja log v5
-1	1334	7058035242505868	CMakeFiles/data_structures_assignment3.dir/main.cpp.obj	c45acbd60375f14
-1340	1899	7058035248202602	data_structures_assignment3.exe	c85fc023be0b0e6d
+11	2297	7058505434082539	CMakeFiles/data_structures_assignment3.dir/AVL.cpp.obj	22995121a8431274
+14	7290	7058572281094750	CMakeFiles/data_structures_assignment3.dir/main.cpp.obj	c45acbd60375f14
+7292	7640	7058572284186965	data_structures_assignment3.exe	58c9e026d0e71589
+2	1937	7058586855420418	build.ninja	6ceae279bf04965d
+18	4900	7058586908129408	CMakeFiles/data_structures_assignment3.dir/AVL.cpp.obj	22995121a8431274
+7	5412	7058586915938495	CMakeFiles/data_structures_assignment3.dir/main.cpp.obj	c45acbd60375f14
+9	529	7058587027051810	CMakeFiles/data_structures_assignment3.dir/AVL.cpp.obj	22995121a8431274
+723	1025	7058587032116444	data_structures_assignment3.exe	58c9e026d0e71589
