@@ -94,7 +94,7 @@ private:
 
 public:
     MaxHeap() {
-        loadStudents("heap.txt");
+        loadStudents("input.txt");
     }
 
     void loadStudents(string filename) {
@@ -234,7 +234,7 @@ private:
 
 public:
     MinHeap() {
-        loadStudents("heap.txt");
+        loadStudents("input.txt");
     }
 
     void loadStudents(string filename) {

@@ -167,7 +167,7 @@ AVLNode* insertStudent(AVLNode* root, Student student) {
 
 void loadStudentsFromFile( AVLNode*& root){
     fstream StudentFile;
-    StudentFile.open("AVLStudentTree.txt" , ios::in);
+    StudentFile.open("input.txt" , ios::in);
     int ID;
     float GPA;
     if(root == nullptr) {
@@ -269,6 +269,19 @@ bool deleteStudent(AVLNode*& root , int id)
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+int countDepartments(AVLNode* root , string department){
+    if(!root){
+        return 0;
+    }
+    if(root->student.department == department){
+        return 1 + countDepartments(root->left , department) + countDepartments(root->right , department);
+    }
+    else{
+        return countDepartments(root->left , department) + countDepartments(root->right , department);
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 void StartAVLMenu(){
     AVLNode* root = nullptr;
     loadStudentsFromFile(root);
@@ -306,6 +319,10 @@ void StartAVLMenu(){
                 if (!inOrder(root)) {
                     cout << "No students found\n";
                 }
+                cout << "number of students in CS department is: " << countDepartments(root , "CS") << endl;
+                cout << "number of students in DS department is: " << countDepartments(root , "DS") << endl;
+                cout << "number of students in IS department is: " << countDepartments(root , "IS") << endl;
+                cout << "number of students in IT department is: " << countDepartments(root , "IT") << endl;
                 break;
             }
             case 5: {

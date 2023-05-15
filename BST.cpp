@@ -140,7 +140,7 @@ public:
 
     Node* readFile(){
         BST bst;
-        ifstream infile("students.txt");
+        ifstream infile("input.txt");
         int num_students;
         infile >> num_students;
         string line;
