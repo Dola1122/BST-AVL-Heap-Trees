@@ -1,5 +1,6 @@
 #include "AVL.cpp"
 #include "BST.cpp"
+#include "Heap.cpp"
 
 int main() {
     int mainChoice, subChoice;
@@ -23,11 +24,10 @@ int main() {
                 StartAVLMenu();
                 break;
             case 3:
-                // Ahmed add your code here.
+                minHeap();
                 break;
             case 4:
-                // Ahmed add your code here.
-
+                maxHeap();
                 break;
             case 5:
                 cout << "Exiting the program..." << endl;
