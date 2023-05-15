@@ -1,4 +1,5 @@
 #include "AVL.cpp"
+#include "BST.cpp"
 
 int main() {
     int mainChoice, subChoice;
@@ -11,12 +12,12 @@ int main() {
         cout << "3. Min Heap" << endl;
         cout << "4. Max Heap" << endl;
         cout << "5. Exit Program" << endl;
-        cout << "Enter your choice: ";
+        cout << "Enter your choice: "<<endl;
         cin >> mainChoice;
 
         switch (mainChoice) {
             case 1:
-                // Shaden add your code here.
+                StartBSTMenu();
                 break;
             case 2:
                 StartAVLMenu();
